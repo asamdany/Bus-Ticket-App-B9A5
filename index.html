@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>P Paribahan</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- tailwind and daisy ui cdn -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.2.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google font Raleway -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- custom styles -->
+    <style>
+      .font-raleway {
+        font-family: "Raleway", sans-serif;
+      }
+    </style>
+  </head>
+
+  <body class="font-raleway">
+    <header class="md:container md:mx-auto p-8">
+      <nav>
+        <div class="navbar flex-1 bg-base-100">
+          <div class="flex-1">
+            <a class="btn btn-ghost normal-case text-xl lg:text-4xl"
+              >P-Ticket</a
+            >
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu text-base menu-horizontal px-1">
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Destination</a></li>
+              <li><a>Search</a></li>
+            </ul>
+          </div>
+          <div class="btn">
+            <a class="text-green-500">Bus</a>
+            <img class="" src="images/bus-icon.png" alt="" />
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="md:container">
+      <!-- banner section -->
+      <section class="flex flex-col justify-center items-center">
+        <div
+          class="flex flex-col justify-center items-center justify-items-center"
+        >
+          <div
+            class="bg-no-repeat bg-cover overflow-hidden rounded-[32px] object-cover w-dvw h-dvh"
+            style="background-image: url(images/banner.png)"
+          >
+            <div class="text-center text-neutral-content">
+              <h1 class="mt-16 mb-20 text-5xl font-raleway font-bold">
+                End-to-End Travel with <br />
+                <span class="text-green-500 mt-16 font-raleway"
+                  >P Paribahan</span
+                >
+              </h1>
+              <p class="mb-20">
+                Best wesite to buy bus tickets. Feel the air luxery on wheel.
+                <br />The most affordable pricing is availave with attactive
+                cupon and discount.
+              </p>
+              <a href="#Booking">
+                <button class="btn btn-success">Buy Tickets</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- offers section -->
+      <section class="my-24">
+        <div class="flex flex-col items-center">
+          <p class="font-raleway text-4xl font-bold mb-20">
+            Best offers for you
+          </p>
+          <div class="flex gap-x-6 px-8">
+            <div id="new-15" class="flex bg-amber-300 rounded-2xl px-8">
+              <div class="flex flex-col justify-center items-center">
+                <h2 class="font-raleway text-3xl font-bold">15% OFF</h2>
+                <p class="font-bold">on your next purchase</p>
+                <p>use by January 2024</p>
+              </div>
+              <img src="images/cupon-devider.png" alt="" />
+              <div class="flex flex-col justify-center items-center">
+                <h2 class="font-raleway text-3xl font-bold">NEW15</h2>
+                <p>Coupon Code</p>
+              </div>
+            </div>
+            <div id="couple-20" class="flex bg-red-300 rounded-2xl px-8">
+              <div class="flex flex-col justify-center items-center">
+                <h2 class="font-raleway text-3xl font-bold">20% OFF</h2>
+                <p class="font-bold">on your next purchase</p>
+                <p>use by January 2024</p>
+              </div>
+              <img src="images/cupon-devider.png" alt="" />
+              <div class="flex flex-col justify-center items-center">
+                <h2 class="font-raleway text-3xl font-bold">Couple 20</h2>
+                <p>Coupon Code</p>
+              </div>
+            </div>
+          </div>
+          <button class="btn btn-outline btn-success mt-20">
+            See All Offers
+          </button>
+        </div>
+      </section>
+      <!-- Ticket Booking -->
+      <section id="Booking" class="my-24">
+        <div
+          class="flex flex-col items-center border-solid border-t-2 border-green-600 rounded-3xl bg-slate-100"
+        >
+          <h3
+            class="text-5xl mt-12 mb-12 font-semibold text-center font-raleway"
+          >
+            P.H Paribahan
+          </h3>
+          <p class="mb-20 font-raleway text-center">
+            Best wesite to buy bus tickets. Feel the air luxery on wheel.
+            <br />The most affordable pricing is availave with attactive cupon
+            and discount.
+          </p>
+          <div class="flex items-center bg-white rounded-2xl px-8 mb-10">
+            <div>
+              <div class="flex justify-between">
+                <div class="flex w-96 px-2 gap-x-4">
+                  <img src="images/bus-logo.png" alt="" />
+                  <div>
+                    <p class="font-bold text-2xl">Greenline Paribahan</p>
+                    <p>Coach-009-WEB ! AC_Business</p>
+                  </div>
+                </div>
+                <div
+                  class="flex justify-center items-center gap-x-4 bg-green-100 rounded-md w-48"
+                >
+                  <img src="images/seat-green.png" alt="" />
+                  <p class="text-green-500 text-center font-bold">
+                    <span
+                      id="total-seat-left"
+                      class="text-green-500 text-center font-bold"
+                      >40</span
+                    >Seats left
+                  </p>
+                </div>
+              </div>
+              <div class="mt-8 rounded-2xl p-8 bg-slate-100 gap-y-4">
+                <div
+                  class="flex justify-between mb-8 border-dashed border-b border-slate-400 pb-4"
+                >
+                  <p>Route</p>
+                  <p class="font-bold">Dhaka - Sylhet</p>
+                </div>
+                <div
+                  class="flex justify-between mb-8 border-dashed border-b border-slate-400 pb-4"
+                >
+                  <p>Departure Time</p>
+                  <p class="font-bold">9:00 PM</p>
+                </div>
+                <div class="flex justify-between gap-x-4">
+                  <p class="font-bold bg-slate-200 rounded-md p-4">
+                    Boarding Point - Laxmipur
+                  </p>
+                  <p class="font-bold bg-slate-200 rounded-md p-4">
+                    Dropping Point - Bogura
+                  </p>
+                  <p class="font-bold bg-slate-200 rounded-md p-4">
+                    Est. Time - 11 Hour
+                  </p>
+                </div>
+              </div>
+            </div>
+            <img src="images/info-devider.png" alt="" />
+            <div class="flex flex-col justify-items-center items-center w-48">
+              <img src="images/fare.png" alt="" />
+              <p class="font-bold text-xl">550 Taka</p>
+              <p>Per Seat</p>
+            </div>
+          </div>
+
+          <div
+            id="buy-ticket-secton"
+            class="md:container-xl md:mx-auto max-w-[2400px] md:pt-12 md:pb-12 sm:pt-6 sm:pb-6 bg-white rounded-[24px] p-8"
+          >
+            <div class="grid grid-cols-1 md:grid-cols-10 gap-10">
+              <div class="md:col-span-6 seat-plan">
+                <h4
+                  class="text-black mb-4 font-raleway font-semibold text-xl md:text-2xl"
+                >
+                  Select Your Seat
+                </h4>
+                <div class="flex border-dashed border-y py-4 justify-between">
+                  <div class="flex font-semibold">
+                    <svg
+                      width="28"
+                      height="28"
+                      viewBox="0 0 28 28"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M5.83333 12.8333C6.45217 12.8333 7.04566 13.0792 7.48325 13.5168C7.92083 13.9543 8.16667 14.5478 8.16667 15.1667V17.5H19.8333V15.1667C19.8333 14.5478 20.0792 13.9543 20.5168 13.5168C20.9543 13.0792 21.5478 12.8333 22.1667 12.8333M5.83333 12.8333C5.21449 12.8333 4.621 13.0792 4.18342 13.5168C3.74583 13.9543 3.5 14.5478 3.5 15.1667V19.8333C3.5 20.4522 3.74583 21.0457 4.18342 21.4832C4.621 21.9208 5.21449 22.1667 5.83333 22.1667H22.1667C22.7855 22.1667 23.379 21.9208 23.8166 21.4832C24.2542 21.0457 24.5 20.4522 24.5 19.8333V15.1667C24.5 14.5478 24.2542 13.9543 23.8166 13.5168C23.379 13.0792 22.7855 12.8333 22.1667 12.8333M5.83333 12.8333V7C5.83333 6.07174 6.20208 5.1815 6.85846 4.52513C7.51484 3.86875 8.40508 3.5 9.33333 3.5H18.6667C19.5949 3.5 20.4852 3.86875 21.1415 4.52513C21.7979 5.1815 22.1667 6.07174 22.1667 7V12.8333M7 22.1667V24.5M21 22.1667V24.5"
+                        stroke="#030712"
+                        stroke-opacity="0.5"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    &nbsp; Available
+                  </div>
+                  <div class="flex font-semibold text-primaryColor">
+                    <svg
+                      width="28"
+                      height="28"
+                      viewBox="0 0 28 28"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M5.83333 12.8333C6.45217 12.8333 7.04566 13.0792 7.48325 13.5168C7.92083 13.9543 8.16667 14.5478 8.16667 15.1667V17.5H19.8333V15.1667C19.8333 14.5478 20.0792 13.9543 20.5168 13.5168C20.9543 13.0792 21.5478 12.8333 22.1667 12.8333C22.7855 12.8333 23.379 13.0792 23.8166 13.5168C24.2542 13.9543 24.5 14.5478 24.5 15.1667V19.8333C24.5 20.4522 24.2542 21.0457 23.8166 21.4832C23.379 21.9208 22.7855 22.1667 22.1667 22.1667H5.83333C5.21449 22.1667 4.621 21.9208 4.18342 21.4832C3.74583 21.0457 3.5 20.4522 3.5 19.8333V15.1667C3.5 14.5478 3.74583 13.9543 4.18342 13.5168C4.621 13.0792 5.21449 12.8333 5.83333 12.8333Z"
+                        fill="#1DD100"
+                      />
+                      <path
+                        d="M5.83333 12.8333V7C5.83333 6.07174 6.20208 5.1815 6.85846 4.52513C7.51484 3.86875 8.40508 3.5 9.33333 3.5H18.6667C19.5949 3.5 20.4852 3.86875 21.1415 4.52513C21.7979 5.1815 22.1667 6.07174 22.1667 7V12.8333"
+                        fill="#1DD100"
+                      />
+                      <path d="M7 22.1667V24.5V22.1667Z" fill="#1DD100" />
+                      <path d="M21 22.1667V24.5V22.1667Z" fill="#1DD100" />
+                      <path
+                        d="M5.83333 12.8333C6.45217 12.8333 7.04566 13.0792 7.48325 13.5168C7.92083 13.9543 8.16667 14.5478 8.16667 15.1667V17.5H19.8333V15.1667C19.8333 14.5478 20.0792 13.9543 20.5168 13.5168C20.9543 13.0792 21.5478 12.8333 22.1667 12.8333M5.83333 12.8333C5.21449 12.8333 4.621 13.0792 4.18342 13.5168C3.74583 13.9543 3.5 14.5478 3.5 15.1667V19.8333C3.5 20.4522 3.74583 21.0457 4.18342 21.4832C4.621 21.9208 5.21449 22.1667 5.83333 22.1667H22.1667C22.7855 22.1667 23.379 21.9208 23.8166 21.4832C24.2542 21.0457 24.5 20.4522 24.5 19.8333V15.1667C24.5 14.5478 24.2542 13.9543 23.8166 13.5168C23.379 13.0792 22.7855 12.8333 22.1667 12.8333M5.83333 12.8333V7C5.83333 6.07174 6.20208 5.1815 6.85846 4.52513C7.51484 3.86875 8.40508 3.5 9.33333 3.5H18.6667C19.5949 3.5 20.4852 3.86875 21.1415 4.52513C21.7979 5.1815 22.1667 6.07174 22.1667 7V12.8333M7 22.1667V24.5M21 22.1667V24.5"
+                        stroke="#1DD100"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    &nbsp; Selected
+                  </div>
+                </div>
+                <div class="">
+                  <div class="bus-plan">
+                    <div class="column">
+                      <div class="no-seat-bg"></div>
+                      <div class="no-seat-bg">A</div>
+                      <div class="no-seat-bg">B</div>
+                      <div class="no-seat-bg">C</div>
+                      <div class="no-seat-bg">D</div>
+                      <div class="no-seat-bg">E</div>
+                      <div class="no-seat-bg">F</div>
+                      <div class="no-seat-bg">G</div>
+                      <div class="no-seat-bg">H</div>
+                      <div class="no-seat-bg">I</div>
+                      <div class="no-seat-bg">J</div>
+                    </div>
+                    <div class="column">
+                      <div class="no-seat-bg"></div>
+                      <div id="" class="seat">A1</div>
+                      <div id="" class="seat">B1</div>
+                      <div id="" class="seat">C1</div>
+                      <div id="" class="seat">D1</div>
+                      <div id="" class="seat">E1</div>
+                      <div id="" class="seat">F1</div>
+                      <div id="" class="seat">G1</div>
+                      <div id="" class="seat">H1</div>
+                      <div id="" class="seat">I1</div>
+                      <div id="" class="seat">J1</div>
+                    </div>
+                    <div class="column">
+                      <div class="no-seat-bg"></div>
+                      <div class="seat">A2</div>
+                      <div class="seat">B2</div>
+                      <div class="seat">C2</div>
+                      <div class="seat">D2</div>
+                      <div class="seat">E2</div>
+                      <div class="seat">F2</div>
+                      <div class="seat">G2</div>
+                      <div class="seat">H2</div>
+                      <div class="seat">I2</div>
+                      <div class="seat">J2</div>
+                    </div>
+                    <div class="blank-column"></div>
+
+                    <div class="column">
+                      <div class="no-seat-bg"></div>
+                      <div class="seat">A3</div>
+                      <div class="seat">B3</div>
+                      <div class="seat">C3</div>
+                      <div class="seat">D3</div>
+                      <div class="seat">E3</div>
+                      <div class="seat">F3</div>
+                      <div class="seat">G3</div>
+                      <div class="seat">H3</div>
+                      <div class="seat">I3</div>
+                      <div class="seat">J3</div>
+                    </div>
+                    <div class="column">
+                      <div class="no-seat-bg driver">
+                        <svg
+                          width="32"
+                          height="32"
+                          viewBox="0 0 32 32"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M16 28C14.4241 28 12.8637 27.6896 11.4078 27.0866C9.95189 26.4835 8.62902 25.5996 7.51472 24.4853C6.40042 23.371 5.5165 22.0481 4.91345 20.5922C4.31039 19.1363 4 17.5759 4 16C4 14.4241 4.31039 12.8637 4.91345 11.4078C5.5165 9.95189 6.40042 8.62902 7.51472 7.51472C8.62902 6.40042 9.95189 5.5165 11.4078 4.91345C12.8637 4.31039 14.4241 4 16 4C17.5759 4 19.1363 4.31039 20.5922 4.91345C22.0481 5.5165 23.371 6.40042 24.4853 7.51472C25.5996 8.62902 26.4835 9.95189 27.0866 11.4078C27.6896 12.8637 28 14.4241 28 16C28 17.5759 27.6896 19.1363 27.0866 20.5922C26.4835 22.0481 25.5996 23.371 24.4853 24.4853C23.371 25.5996 22.0481 26.4835 20.5922 27.0866C19.1363 27.6896 17.5759 28 16 28ZM16 28V18.6667M13.3333 16C13.3333 16.7072 13.6143 17.3855 14.1144 17.8856C14.6145 18.3857 15.2928 18.6667 16 18.6667M13.3333 16C13.3333 15.2928 13.6143 14.6145 14.1144 14.1144C14.6145 13.6143 15.2928 13.3333 16 13.3333C16.7072 13.3333 17.3855 13.6143 17.8856 14.1144C18.3857 14.6145 18.6667 15.2928 18.6667 16M13.3333 16L4.33333 13.3333M16 18.6667C16.7072 18.6667 17.3855 18.3857 17.8856 17.8856C18.3857 17.3855 18.6667 16.7072 18.6667 16M18.6667 16L27.6667 13.3333"
+                            stroke="#030712"
+                            stroke-opacity="0.7"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </div>
+                      <div class="seat">A4</div>
+                      <div class="seat">B4</div>
+                      <div class="seat">C4</div>
+                      <div class="seat">D4</div>
+                      <div class="seat">E4</div>
+                      <div class="seat">F4</div>
+                      <div class="seat">G4</div>
+                      <div class="seat">H4</div>
+                      <div class="seat">I4</div>
+                      <div class="seat">J4</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="md:col-span-4 account">
+                <h4
+                  class="text-black mb-4 font-raleway font-semibold text-xl md:text-2xl border-b pb-4 border-dashed"
+                >
+                  Select Your Seat
+                </h4>
+                <div class="bg-[#F7F8F8] rounded-lg p-8">
+                  <div
+                    class="flex flex-row justify-between border-dashed border-b pb-2 mb-4"
+                  >
+                    <div class="text-primaryheadingColor font-semibold">
+                      Seat
+                      <span
+                        id="selectedTicketNumber"
+                        class="bg-primaryColor text-white px-2 rounded-md"
+                        >0</span
+                      >
+                    </div>
+                    <div class="text-primaryheadingColor font-semibold">
+                      Class
+                    </div>
+                    <div class="text-primaryheadingColor font-semibold">
+                      Price
+                    </div>
+                  </div>
+                  <div class="add-seat-list"></div>
+                  <hr />
+                  <div
+                    class="flex flex-row justify-between border-dashed border-b py-2"
+                  >
+                    <div class="text-primaryheadingColor font-semibold">
+                      Total Price
+                    </div>
+                    <div class="text-primaryheadingColor font-semibold">
+                      BDT <span id="initial-total">0</span>
+                    </div>
+                  </div>
+                  <div class="add-discount-list"></div>
+                  <div id="promo-block" class="my-4">
+                    <label
+                      class="input input-bordered flex items-center gap-2 mb-4"
+                    >
+                      <input
+                        id="promCode"
+                        type="text"
+                        class="grow"
+                        placeholder="Apply Coupon Code"
+                        disabled
+                      />
+                      <button
+                        id="promoApplyButton"
+                        class="btn btn-success btn-disabled btn-sm text-white"
+                      >
+                        Apply
+                      </button>
+                    </label>
+                    <p class="promo-error hidden text-center">
+                      Please enter a valid Promo Code
+                    </p>
+                  </div>
+                  <p
+                    class="promo-success hidden text-center text-bold text-success"
+                  >
+                    Congrats! Your Promo Applied Successfully. Have a Nice
+                    Journey!!
+                  </p>
+                  <div
+                    class="flex flex-row justify-between border-dashed border-b py-2"
+                  >
+                    <div class="text-primaryheadingColor font-semibold">
+                      Grand Total
+                    </div>
+                    <div class="text-primaryheadingColor font-semibold">
+                      BDT <span id="grand-total">0</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="my-4">
+                  <label
+                    class="text-base font-inter font-semibold text-primaryheadingColor block mb-2"
+                    >Passenger Name*</label
+                  >
+                  <input
+                    type="text"
+                    placeholder="Enter Your Name"
+                    class="input input-bordered input-[rgba(3,8,17,.40)] w-full py-2 text-sm h-14"
+                  />
+                </div>
+                <div class="my-4">
+                  <label
+                    class="text-base font-inter font-semibold text-primaryheadingColor block mb-2"
+                    >Phone Number*</label
+                  >
+                  <input
+                    id="emailField"
+                    value=""
+                    type="number"
+                    required
+                    placeholder="Enter Your Phone"
+                    class="input input-bordered input-[rgba(3,8,17,.40)] w-full py-2 text-sm h-14"
+                  />
+                </div>
+                <div class="my-4">
+                  <label
+                    class="text-base font-inter font-semibold text-primaryheadingColor block mb-2"
+                    >Email ID</label
+                  >
+                  <input
+                    type="email"
+                    value=""
+                    placeholder="Enter Your Email"
+                    class="input input-bordered input-[rgba(3,8,17,.40)] w-full py-2 text-sm h-14"
+                  />
+                </div>
+                <p class="final-error hidden text-center">
+                  Please Book the Seat First & Put the Phone
+                </p>
+                <div class="my-4">
+                  <button
+                    onclick="my_modal_2.showModal()"
+                    id="final_button"
+                    class="btn btn-wide bg-primaryColor text-white py-4 text-lg w-full h-14 btn-disabled"
+                  >
+                    Next
+                  </button>
+                </div>
+                <div class="flex flex-row justify-evenly pb-4">
+                  <div
+                    class="underline underline-offset-4 text-primaryTextColor"
+                  >
+                    Terms and Conditions
+                  </div>
+                  <div
+                    class="underline underline-offset-4 text-primaryTextColor"
+                  >
+                    Cancellation Policy
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="p-10 bg-neutral text-neutral-content">
+      <div class="">
+        <div
+          class="flex justify-between border-dashed border-b-2 border-white-100 mb-12"
+        >
+          <div>
+            <p class="font-bold text-4xl font-raleway">P-Ticket</p>
+            <p class="font-raleway">
+              P-Ticket is a digital platform to make<br />
+              your daily commuting better.
+            </p>
+          </div>
+          <div class="flex flex-col mb-10">
+            <h6 class="text-xl font-raleway">Download our app</h6>
+            <img src="images/Group 104.svg" alt="" />
+          </div>
+        </div>
+        <div class="flex justify-between mb-12">
+          <p>@all rights reserved, P-Ticket services limited.2024</p>
+          <div class="flex">
+            <p>Terms & condition</p>
+            <p>Return & refund policy</p>
+            <p>Privacy policy</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!--Modal Section-->
+    <dialog id="my_modal_2" class="modal">
+      <div class="modal-box text-center">
+        <img class="mx-auto py-4" src="images/success.png" alt="thank-icon" />
+        <h3 class="font-bold text-lg text-primaryColor py-4">Success</h3>
+        <h4 class="text-black py-4 font-bold">
+          Thank you for Booking Our Bus Seats.
+        </h4>
+        <p class="py-4">
+          We are working hard to find the best service and deals for you.
+          Shortly you will find a confirmation in your email.
+        </p>
+        <form method="dialog" class="modal-backdrop">
+          <button class="btn btn-success">Continue</button>
+        </form>
+      </div>
+    </dialog>
+
+    <script src="script.js"></script>
+  </body>
+</html>

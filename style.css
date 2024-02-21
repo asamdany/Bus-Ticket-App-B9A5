@@ -1,0 +1,52 @@
+.bus-plan {
+  display: grid;
+  grid-template-columns: 35px 1fr 1fr 35px 1fr 1fr;
+  gap: 10px;
+  margin-top: 2rem;
+}
+.column {
+  display: grid;
+  column-gap: 3rem;
+  row-gap: 2rem;
+}
+.seat {
+  background-color: #f7f8f8;
+  padding: 10px;
+  text-align: center;
+  min-height: 52px;
+  border-radius: 15px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+.not-allowed {
+  cursor: not-allowed !important;
+}
+.seat.selectedSeat {
+  background-color: #1dd100;
+}
+.no-seat-bg {
+  background-color: transparent;
+  padding: 10px;
+  text-align: center;
+  min-height: 52px;
+  border-radius: 15px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.driver {
+  background-color: #f7f8f8;
+  padding: 10px;
+  text-align: center;
+  min-height: 52px;
+  border-radius: 15px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.final-error,
+.promo-error {
+  color: #ff0000;
+}
